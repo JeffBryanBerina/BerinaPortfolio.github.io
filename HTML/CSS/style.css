@@ -1,0 +1,236 @@
+#myTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#myInformation {
+    text-align: left;
+}
+
+#myName {
+    font-size: 30px; /* Adjust the font size for the name */
+}
+
+#myCourse {
+    font-size: 20px; /* Adjust the font size for the course */
+    font-style: italic; /* Make the course italic */
+    margin-left: 10px; /* Adjust the spacing between name and course */
+}
+
+#Menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Justify the content within #Menu */
+}
+
+#Menu li {
+    display: inline-block;
+    margin-left: 10px; /* Adjust the spacing between menu items */
+    font-size: 50px;
+}
+#image {
+    overflow: hidden;
+    border-radius: 50%; /* Make the image round */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin-top as needed */
+    margin-left: -1000px; /* Adjust margin-left to move it a bit to the left */
+}
+
+#myImage {
+    width: 5000px; /* Adjust the width of the image */
+    height: 5000px; /* Adjust the height of the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+#myIntroduction{
+    margin-left: 1100px;
+  margin-top: -23%;
+}
+#Intro{
+    font-size: 30px;
+}
+
+#font{
+    text-align: justify;
+    font-size: 50px;
+}
+
+#Choices {
+    text-align: center;
+}
+
+#subMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: 44%; /* Adjust margin-left to move all circles to the left */
+}
+
+#subMenu li:nth-child(1) {
+    background-color: #3498db; /* Blue */
+}
+
+#subMenu li:nth-child(2) {
+    background-color: #e67e22; /* Orange */
+}
+
+#subMenu li:nth-child(3) {
+    background-color: #e74c3c; /* Red */
+}
+
+#subMenu li:nth-child(4) {
+    background-color: #2ecc71; /* Green */
+}
+
+#subMenu li {
+    display: inline-block;
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    line-height: 200px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    transition: all 0.3s ease; /* Add a smooth transition effect */
+
+    /* Add hover styles */
+    cursor: pointer;
+}
+#subMenu li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set text color to white */
+    transition: color 0.3s ease; /* Add a smooth transition effect for color change */
+
+    /* Add hover styles */
+}
+#subMenu li:hover {
+    transform: scale(1.1); /* Scale the circle to 110% on hover */
+}
+#footer {
+    margin-top: 130px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#footer p {
+    font-size: 20px;
+    display: inline-block; /* Display the paragraphs as inline-block elements */
+}
+
+#footer i {
+    font-size: 30px;
+    margin-right: 5px; /* Add some spacing between the icon and text */
+}
+/*comment*/
+
+
+body {
+    font-size: 16px;
+}
+
+#myTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#Menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#Menu li {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+#image {
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#myImage {
+    width: 100%; /* Make the image width 100% for responsiveness */
+    max-width: 700px; /* Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#myIntroduction {
+    text-align: left; /* Align text to the left */
+    margin: 20px;
+    margin-left: 42%;
+    margin-top: -30%;
+}
+
+#Choices {
+    text-align: center;
+}
+
+#subMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#subMenu li {
+    margin: 10px;
+    font-size: 18px;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#footer p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    #myIntroduction {
+        margin: 10px;
+    }
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    #myTop {
+        flex-direction: column;
+    }
+
+    #Menu {
+        flex-direction: column;
+    }
+
+    #Menu li {
+        margin: 10px 0;
+    }
+
+    #myIntroduction {
+        margin: 10px;
+    }
+
+    #subMenu {
+        flex-direction: column;
+    }
+
+    #subMenu li {
+        margin: 10px 0;
+    }
+}
